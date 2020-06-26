@@ -7,8 +7,8 @@
 // @grant       none
 // ==/UserScript==
 
-var htmlNodeObserver = new MutationObserver((mutations) => {
-  mutations.forEach(function (mutation) {
+const htmlNodeObserver = new MutationObserver((mutations) => {
+  mutations.forEach((mutation) => {
     if (mutation.type === "childList") {
       // Find the adblocker script and set it to false
       if (
@@ -22,7 +22,7 @@ var htmlNodeObserver = new MutationObserver((mutations) => {
   });
 });
 
-var htmlNode = document.childNodes[1];
+const htmlNode = document.childNodes[1];
 
 // Observe the <html> node
 htmlNodeObserver.observe(htmlNode, {
@@ -33,6 +33,6 @@ htmlNodeObserver.observe(htmlNode, {
 });
 
 // Remove top ad banner
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#siteHeader .banner").remove();
 });
