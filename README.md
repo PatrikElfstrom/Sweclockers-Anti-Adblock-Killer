@@ -6,6 +6,6 @@ Anti-adblock killer userscript for [sweclockers.com](https://www.sweclockers.com
 * removes top ad banner
 * Let's you keep the heart ♥
 
-![heart](https://i.imgur.com/E8c2H7p.png)
+![heart](https://i.imgur.com/BJmjodN.png)
 
 Tested with [FireMonkey](https://addons.mozilla.org/en-US/firefox/addon/firemonkey/)

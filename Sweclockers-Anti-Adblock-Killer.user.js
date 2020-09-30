@@ -3,7 +3,7 @@
 // @namespace   storm
 // @include     *://*.sweclockers.com/*
 // @run-at      document-start
-// @version     1
+// @version     1.1.0
 // @grant       none
 // @downloadURL https://cdn.jsdelivr.net/gh/PatrikElfstrom/Sweclockers-Anti-Adblock-Killer@master/Sweclockers-Anti-Adblock-Killer.user.js
 // ==/UserScript==
@@ -35,5 +35,5 @@ htmlNodeObserver.observe(htmlNode, {
 
 // Remove top ad banner
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector("#siteHeader .banner").remove();
+  document.querySelector(".adPanorama, #siteHeader .banner")?.remove();
 });
