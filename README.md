@@ -3,7 +3,8 @@
 Anti-adblock killer userscript for [sweclockers.com](https://www.sweclockers.com)
 
 * Stops anti-adblock message 
-* removes top ad banner
+* Removes top ad banner
+* Removes empty ad areas
 * Let's you keep the heart ♥
 
 ![heart](https://i.imgur.com/BJmjodN.png)
