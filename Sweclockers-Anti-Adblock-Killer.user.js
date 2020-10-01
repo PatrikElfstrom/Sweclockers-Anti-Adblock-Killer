@@ -5,7 +5,7 @@
 // @run-at      document-start
 // @version     2.0.0
 // @grant       none
-// @downloadURL https://cdn.jsdelivr.net/gh/PatrikElfstrom/Sweclockers-Anti-Adblock-Killer@master/Sweclockers-Anti-Adblock-Killer.user.js
+// @downloadURL https://cdn.jsdelivr.net/gh/PatrikElfstrom/Sweclockers-Anti-Adblock-Killer/Sweclockers-Anti-Adblock-Killer.user.js
 // ==/UserScript==
 
 const htmlNodeObserver = new MutationObserver((mutations) => {
