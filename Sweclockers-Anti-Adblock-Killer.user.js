@@ -3,7 +3,7 @@
 // @namespace   storm
 // @include     *://*.sweclockers.com/*
 // @run-at      document-start
-// @version     2.0.0
+// @version     2.1.0
 // @grant       none
 // @downloadURL https://cdn.jsdelivr.net/gh/PatrikElfstrom/Sweclockers-Anti-Adblock-Killer/Sweclockers-Anti-Adblock-Killer.user.js
 // ==/UserScript==
@@ -34,17 +34,20 @@ htmlNodeObserver.observe(htmlNode, {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const content = document.querySelector(".col-content");
-  const side = document.querySelector(".col-side");
   const outerSide = document.querySelector(".col-outer-side");
 
-  const outerSideWidth = outerSide.style.clientWidth;
+  if(outerSide) {
+    const content = document.querySelector(".col-content");
+    const side = document.querySelector(".col-side");
 
-  // Fix column margins
-  content.style.marginRight -= outerSideWidth;
-  content.style.maxWidth = 'inherit';
-  side.style.marginLeft -= outerSideWidth;
-  side.style.marginRight = 0;
+    const outerSideWidth = outerSide.style.clientWidth;
+  
+    // Fix column margins
+    content.style.marginRight -= outerSideWidth;
+    content.style.maxWidth = 'inherit';
+    side.style.marginLeft -= outerSideWidth;
+    side.style.marginRight = 0;
+  }
 
   // Remove all ad areas
   document.querySelectorAll(".ad, .col-outer-side")?.forEach(element => element.remove());
